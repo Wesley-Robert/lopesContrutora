@@ -1,10 +1,33 @@
 1. Destaque nos serviços
 
-Cores: Branco, Azul
-
+Cores: 
+	Branco{
+		#A2A4A8
+		#646669
+		#DFE2E8
+		#EBEFF5
+		#CBCED3
+	}
+	Azul{
+		#3260A8
+		#1F3B69
+		#4684E8
+		#498CF5
+		#3E75CF
+	}
 Navegação:
-	Home
-	Quem somos
-	Contato
-	Obras
-	Parceiros
+	Home{
+		
+	}
+	Quem somos{
+
+	}
+	Contato{
+
+	}
+	Obras{
+
+	}
+	Parceiros{
+
+	}
