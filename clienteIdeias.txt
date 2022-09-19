@@ -16,18 +16,9 @@ Cores:
 		#3E75CF
 	}
 Navegação:
-	Home{
-		
-	}
-	Quem somos{
-
-	}
-	Contato{
-
-	}
-	Obras{
-
-	}
-	Parceiros{
-
-	}
+	Inicio
+	Parceiros
+	Serviços
+	Obras
+	Sobre nos
+	Contato
