@@ -1,90 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .blogs {
-      background: var(--light-bg);
-    }
+<link rel="stylesheet" href="css/style.css">
+<section class="blogs" id="blogs">
 
-    #instafeed{
-    }
+  <h1 class="heading"> Nossos blogs </h1>
 
-    .blogs #instafeed .slide {
-      text-align: center;
-      margin: 50px;
-    }
+  <div class="swiper blogs-slider">
 
-    .blogs #instafeed .slide:hover .image img {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-    }
+     <div class="swiper-wrapper">
 
-    .blogs #instafeed .slide .image {
-      height: 25rem;
-      width: 90%;
-      overflow: hidden;
-      margin: 0 auto;
-      margin-bottom: -3rem;
-    }
-
-    .blogs #instafeed .slide .image img {
-      height: 100%;
-      width: 100%;
-      -o-object-fit: cover;
-        object-fit: cover;
-      -webkit-transition: .2s linear;
-      transition: .2s linear;
-    }
-
-    .blogs #instafeed .slide .content {
-      width: 600px;
-      padding: 2rem;
-      padding-top: 5rem;
-      background: var(--white);
-      -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-              box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-    }
-
-    .blogs #instafeed .slide .content h3 {
-      font-size: 2rem;
-      color: var(--black);
-      text-transform: capitalize;
-    }
-
-    .blogs #instafeed .slide .content p {
-      padding: 1rem 0;
-      font-size: 1.4rem;
-      color: var(--light-color);
-      line-height: 2;
-    }
-  </style>
-</head>
-<body>
-
-  
-    <section class="blogs" id="blogs">
-
-      <h1 class="heading"> Nossos blogs </h1>
-      <div class="swiper blogs-slider">
-          <div id="instafeed"></div>
+        <div class="swiper-slide slide">
+           <div class="image">
+              <img src="images/blog-1.jpg" alt="">
+           </div>
+           <div class="content">
+              <h3>Título do Blog</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <a href="#" class="btn">Mais informação</a>
+           </div>
         </div>
-      </div>
-      
-     </section>
-  
+
+        <div class="swiper-slide slide">
+           <div class="image">
+              <img src="images/blog-2.jpg" alt="">
+           </div>
+           <div class="content">
+              <h3>Título do Blog</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <a href="#" class="btn">Mais informação</a>
+           </div>
+        </div>
+
+        <div class="swiper-slide slide">
+           <div class="image">
+              <img src="images/blog-3.jpg" alt="">
+           </div>
+           <div class="content">
+              <h3>Título do Blog</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <a href="#" class="btn">Mais informação</a>
+           </div>
+        </div>
+
+        <div class="swiper-slide slide">
+           <div class="image">
+              <img src="images/blog-4.jpg" alt="">
+           </div>
+           <div class="content">
+              <h3>Título do Blog</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <a href="#" class="btn">Mais informação</a>
+           </div>
+        </div>
+
+        <div class="swiper-slide slide">
+           <div class="image">
+              <img src="images/blog-5.jpg" alt="">
+           </div>
+           <div class="content">
+              <h3>Título do Blog</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <a href="#" class="btn">Mais informação</a>
+           </div>
+        </div>
+        
+        <div class="swiper-slide slide">
+           <div class="image">
+              <img src="images/blog-6.jpg" alt="">
+           </div>
+           <div class="content">
+              <h3>Título do Blog</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+              <a href="#" class="btn">Mais informação</a>
+           </div>
+        </div>
+
+     </div>
+
+  </div>
+
+</section>
   
   <script type="text/javascript" src="js/instafeed.min.js"></script>
 
   <script type="text/javascript">
       var feed = new Instafeed({
-        accessToken: 'IGQVJWVDRzMFVBdDhrQkhKVGVyTFV4eGRieEc1UTNja2hVZAmd1bVJwcFNBVEIyc0NGd205RVFIU3ZALbU1mMklESy0yZAV9KckgzTmM2Y1NPMFJrOGltbjN0MW83M2hyNXdTRnY4ZAXVqMXdqYVNYWW1EMwZDZD',
+        accessToken: 'IGQVJWNjR4Snh4eHpnMG1UOEZAaMHpoYkM0UktRaU1KNHlQbXBpSHpUSVNfVUJxclI1Q1hURXRRMUhLNktTdDJMVVUwMmNQOE1Ldl9jUWtzTkN2ZA3VaMk1xYzJYem1iemxNdU1ESTRvZAXhMemJTWlZAiOQZDZD',
         limit: 6,
-        template: '<div class="swiper-slide slide"><div class="image"><img style="width: 500px;" title="{{caption}}" src="{{image}}"></div><div class="content"><h3>Título do Blog</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p><a href="#" class="btn">Mais informação</a></div></div>'
+        template: '<img class="imgsFeed" style="width: 50px;" title="{{caption}}" src="{{image}}">'
 
       });
       feed.run();
