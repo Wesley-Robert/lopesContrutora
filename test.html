@@ -1,10 +1,98 @@
-<script type="text/javascript" src="js/instafeed.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .blogs {
+      background: var(--light-bg);
+    }
 
-<div id="instafeed"></div>
+    #instafeed{
+    }
 
-<script type="text/javascript">
-    var feed = new Instafeed({
-      accessToken: 'IGQVJWWmVmVjBCQWE3X1d6NlFYeC0yT19pVktqd1V4QXVtckJXR0Y4YmpGN0FVNllIZADJTR0hHa0VUVmVWZATI0eEZADRzNJS2llWGV1MXlMal9OVGdmbGRsWTc5V1l6bmpiTmRnVjh5ZAVRFSmxjVldfZAQZDZD'
-    });
-    feed.run();
-</script>
+    .blogs #instafeed .slide {
+      text-align: center;
+      margin: 50px;
+    }
+
+    .blogs #instafeed .slide:hover .image img {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+
+    .blogs #instafeed .slide .image {
+      height: 25rem;
+      width: 90%;
+      overflow: hidden;
+      margin: 0 auto;
+      margin-bottom: -3rem;
+    }
+
+    .blogs #instafeed .slide .image img {
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+        object-fit: cover;
+      -webkit-transition: .2s linear;
+      transition: .2s linear;
+    }
+
+    .blogs #instafeed .slide .content {
+      width: 600px;
+      padding: 2rem;
+      padding-top: 5rem;
+      background: var(--white);
+      -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+              box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+    }
+
+    .blogs #instafeed .slide .content h3 {
+      font-size: 2rem;
+      color: var(--black);
+      text-transform: capitalize;
+    }
+
+    .blogs #instafeed .slide .content p {
+      padding: 1rem 0;
+      font-size: 1.4rem;
+      color: var(--light-color);
+      line-height: 2;
+    }
+  </style>
+</head>
+<body>
+
+  
+    <section class="blogs" id="blogs">
+
+      <h1 class="heading"> Nossos blogs </h1>
+      <div class="swiper blogs-slider">
+          <div id="instafeed"></div>
+        </div>
+      </div>
+      
+     </section>
+  
+  
+  <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+  <script type="text/javascript">
+      var feed = new Instafeed({
+        accessToken: 'IGQVJYaHQ4MmtvZAzB5Vnp0UDZAqWGZA5bml0RHdoWjdyVzNzWkZAYclR3MHctNmVpczdRWEZAWRG91MjNpUXJGeGtsYlRGQlBMbWVlYXRuUVZATYmxnVG4xTGlBYXEyanhwbkdIclVqaHBuUGlQRE1tOUxibgZDZD',
+        limit: 6,
+        template: '<div class="swiper-slide slide"><div class="image"><img style="width: 500px;" title="{{caption}}" src="{{image}}"></div><div class="content"><h3>Título do Blog</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p><a href="#" class="btn">Mais informação</a></div></div>'
+
+      });
+      feed.run();
+  </script>
+</body>
+</html>
+
+
+
+
+
