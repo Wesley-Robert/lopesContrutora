@@ -549,9 +549,14 @@
 
    <h1 class="heading"> Nossos blogs </h1>
 
-   <div id="instafeed"></div>
+   <div class="swiper blogs-slider">
+
+      <div id="instafeed" class="swiper-wrapper">
+
+      </div>
 
    </div>
+
 </section>
 
 <!-- blogs section ends -->
@@ -609,13 +614,13 @@ lightGallery(document.querySelector('.projects .box-container'));
 <script type="text/javascript" src="js/instafeed.min.js"></script>
 
 <script type="text/javascript">
-   var feed = new Instafeed({
-      accessToken: 'IGQVJWNjR4Snh4eHpnMG1UOEZAaMHpoYkM0UktRaU1KNHlQbXBpSHpUSVNfVUJxclI1Q1hURXRRMUhLNktTdDJMVVUwMmNQOE1Ldl9jUWtzTkN2ZA3VaMk1xYzJYem1iemxNdU1ESTRvZAXhMemJTWlZAiOQZDZD',
-      limit: 6,
-      template: '<div class=".slideTwo"><div class="imgs"><img class="imgsFeed" style="width: 50px;" title="{{caption}}" src="{{image}}"></div><div class="tx-box"><h2>Title</h2><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione aspernatur vitae ad amet veritatis cum perspiciatis ea deserunt.</p><input type="submit" value="enviar mensagem" class="btn"></div></div>'
+    var feed = new Instafeed({
+      accessToken: 'IGQVJXZAk5LRFZAHZAElnOVlxdE5zT25CX00wMHVZAeWFiNmNvMlQ4cE5GMHhIcUlqQUZAkSDZAlUnZA0XzBfV0ZAIbkc3cVVJcjdCYUhGYkZAicVJ2TlVFeF92dmVTRWFfdi1MUUlrdU55R0NqUmJEZAGhjWnRWXwZDZD',
+      limit: 8,
+      template: '<div class="swiper-slide slide"><div class="image"><img class="imgsFeed" class="imgsFeed" title="{{caption}}" src="{{image}}"></div><div class="content"><h3>Nova postagem</h3><p>Vem ver nossas novas postagens do insta...</p><a href="#" class="btn">Mais informação</a></div></div>'
 
-   });
-   feed.run();
+    });
+    feed.run();
 </script>
 
 </body>
