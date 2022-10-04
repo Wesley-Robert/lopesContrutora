@@ -961,3 +961,10 @@ section {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.box-modify{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
