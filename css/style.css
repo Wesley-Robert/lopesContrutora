@@ -562,15 +562,15 @@ section {
   line-height: 2;
 }
 
-.projects {
+.projetos {
   background: var(--black);
 }
 
-.projects .heading {
+.projetos .heading {
   color: var(--white);
 }
 
-.projects .box-container {
+.projetos .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
@@ -578,21 +578,21 @@ section {
   gap: 2rem;
 }
 
-.projects .box-container .box {
+.projetos .box-container .box {
   cursor: initial;
 }
 
-.projects .box-container .box:hover .image img {
+.projetos .box-container .box:hover .image img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.projects .box-container .box .image {
+.projetos .box-container .box .image {
   height: 40rem;
   overflow: hidden;
 }
 
-.projects .box-container .box .image img {
+.projetos .box-container .box .image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -601,7 +601,7 @@ section {
   transition: .2s linear;
 }
 
-.projects .box-container .box .content {
+.projetos .box-container .box .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,23 +611,23 @@ section {
           justify-content: space-between;
 }
 
-.projects .box-container .box .content .info {
+.projetos .box-container .box .content .info {
   padding: 1rem 2rem;
 }
 
-.projects .box-container .box .content .info h3 {
+.projetos .box-container .box .content .info h3 {
   font-size: 1.7rem;
   color: var(--black);
   text-transform: capitalize;
 }
 
-.projects .box-container .box .content .info p {
+.projetos .box-container .box .content .info p {
   font-size: 1.5rem;
   color: var(--light-color);
   line-height: 2;
 }
 
-.projects .box-container .box .content i {
+.projetos .box-container .box .content i {
   width: 7.5rem;
   font-size: 3rem;
   background: var(--yellow);
